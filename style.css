@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lexend:wght@100..900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+.padding-5 {
+	padding: 2rem 5rem;
+}
+/*  Variables For Colors*/
+:root {
+	--Primary: #0a3570;
+	--Secondary: #113bad;
+	--Tertiary: #0011ff;
+	--Green: #2caf04;
+	--White: #fcfcfc;
+
+	--Engineer: #ff8c00;
+	--Math: #6a0dad;
+}
+
+body {
+	font-family: 'IBM Plex Mono', system-ui, -apple-system, BlinkMacSystemFont,
+		'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+		sans-serif;
+	background-color: var(--Secondary);
+	color: var(--White);
+}
+
+header {
+	padding: 1.5rem 5rem;
+	background-color: var(--Primary);
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav a {
+	display: inline-block;
+	margin-right: 1.5rem;
+	font-weight: 700;
+	color: var(--White);
+	padding: 5px 10px;
+	background-color: var(--Secondary);
+	transition: 0.3s;
+}
+
+header nav a:hover,
+header nav a:active {
+	transform: scale(110%);
+	background-color: var(--Tertiary);
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero h3 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+.hero h3 .color-text {
+	font-family: 'Lucida Sans';
+	color: var(--Green);
+}
+
+.hero p.sub {
+	font-size: 2rem;
+	color: var(--Green);
+	margin-bottom: 1.2rem;
+}
+
+.hero-text {
+	width: 50%;
+	text-align: justify;
+}
+
+.hero .hero-img {
+	width: 50%;
+	margin-left: 2rem;
+	display: flex;
+	justify-content: end;
+}
+
+.hero-img img {
+	width: 90%;
+}
+
+.categories {
+	margin-top: 3rem;
+	background-color: var(--Primary);
+}
+
+.categories h2 {
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.categories-main {
+	margin-top: 1.2rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+}
+
+.categories-box {
+	border: 2px solid var(--Tertiary);
+	border-radius: 15px;
+	padding: 15px 20px;
+	background-color: white;
+	box-shadow: 2px 2px 2px var(--Tertiary);
+	transition: 0.5s;
+}
+.categories-box:hover {
+	transform: scale(105%);
+}
+
+.categories-box .box-top {
+	color: var(--Tertiary);
+	font-size: 3rem;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid var(--Tertiary);
+}
+.categories-box .box-top p {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	gap: 1.5rem;
+}
+
+.categories-box .box-top svg {
+	/* font-size: 2rem; */
+	width: 50px;
+	height: 50px;
+}
+
+.categories-box .box-text {
+	padding-top: 1rem;
+	text-align: left;
+	color: black;
+}
+
+.categories-box:nth-child(2) {
+	border: 2px solid var(--Engineer);
+	box-shadow: 2px 2px 2px var(--Engineer);
+}
+
+.categories-box:nth-child(2) .box-top {
+	color: var(--Engineer);
+	border-bottom: 1px solid var(--Engineer);
+}
+
+.categories-box:last-child {
+	border: 2px solid var(--Math);
+	box-shadow: 2px 2px 2px var(--Math);
+}
+
+.categories-box:last-child .box-top {
+	color: var(--Math);
+	border-bottom: 1px solid var(--Math);
+}
