@@ -14,28 +14,31 @@ a {
 }
 /*  Variables For Colors*/
 :root {
-	--Primary: #0000B8;
-	--Secondary:#00FFFF;
+	--Primary: #0000b8;
+	--Secondary: #00a2ff;
 	--Tertiary: #0011ff;
 	--Green: #2caf04;
 	--White: #fcfcfc;
+	--Gray: #6d6d6d;
 
 	--Engineer: #ff8c00;
 	--Math: #6a0dad;
 }
 
 body {
-	font-family: 'Arial', system-ui, -apple-system, BlinkMacSystemFont,
-		'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-		sans-serif;
+	font-family: 'Arial', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	background-color: var(--Secondary);
 	color: var(--White);
 }
+
+/* Header */
 
 header {
 	padding: 1.5rem 5rem;
 	background-color: var(--Primary);
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -54,6 +57,8 @@ header nav a:active {
 	transform: scale(110%);
 	background-color: var(--Tertiary);
 }
+
+/* The part for the welcome text */
 
 .hero {
 	display: flex;
@@ -78,17 +83,19 @@ header nav a:active {
 .hero-text {
 	width: 50%;
 	text-align: justify;
+	transform: translateY(5%);
 }
+
+/* The image for the hero side */
 
 .hero .hero-img {
 	width: 50%;
-	margin-left: 2rem;
 	display: flex;
 	justify-content: end;
 }
 
 .hero-img img {
-	width: 90%;
+	width: 70%;
 }
 
 .categories {
@@ -143,7 +150,7 @@ header nav a:active {
 .categories-box .box-text {
 	padding-top: 1rem;
 	text-align: left;
-	color: black;
+	color: var(--Gray);
 }
 
 .categories-box:nth-child(2) {
@@ -166,119 +173,227 @@ header nav a:active {
 	border-bottom: 2px solid var(--Math);
 }
 
-@media (max-width: 768px) {
-    /* General Body Adjustments */
-    body {
-        font-size: 14px; 
-        padding: 10px;
-    }
-
-    /* Header Adjustments */
-    header {
-        flex-direction: column; 
-        padding: 1rem 2rem; /* Reduce padding */
-        align-items:center;
-        text-align: center
-    }
-
-    header nav a {
-        margin: 0.5rem 0; /* Space between nav links */
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-
-    /* Hero Section Adjustments */
-    .hero {
-        flex-direction: column; 
-        align-items: center;
-        text-align: center;
-    }
-
-    .hero-text, 
-    .hero .hero-img {
-        width: 100%; 
-        margin: 0;
-    }
-
-    .hero h3 {
-        font-size: 2rem; /* Smaller heading size */
-    }
-
-    .hero p.sub {
-        font-size: 1.5rem;
-    }
-
-    .hero-img img {
-        width: 100%; 
-        max-width: 350px; 
-        height: auto;
-    }
-
-    /* Categories Section Adjustments */
-    .categories {
-        padding: 1rem;
-    }
-
-    .categories h2 {
-        font-size: 1.8rem;
-    }
-
-    .categories-main {
-        grid-template-columns: 1fr; /* Display categories in a single column */
-        gap: 1rem;
-    }
-
-    .categories-box {
-        padding: 10px; /* Reduce box padding */
-    }
-
-    .categories-box .box-top {
-        font-size: 2rem; /* Smaller heading size */
-    }
-
-    .categories-box .box-top svg {
-        width: 40px;
-        height: 40px;
-    }
-
-    /* Responsive Buttons (if any) */
-    button {
-        width: 100%;
-        padding: 12px;
-        font-size: 16px;
-    }
+/* Testimonials */
+.reviews {
+	margin-top: 3rem;
 }
 
+.reviews h2 {
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.reviews-main {
+	margin-top: 1.2rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+}
+
+.review-box {
+	border: 2px solid var(--Tertiary);
+	border-radius: 15px;
+	padding: 15px 20px;
+	background-color: white;
+	box-shadow: 2px 2px 2px var(--Gray);
+	transition: 0.5s;
+}
+
+.review-box .review-user {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid var(--Tertiary);
+}
+
+.review-user img {
+	width: 35px;
+	border-radius: 50%;
+}
+
+.review-user p {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: black;
+}
+
+.review-box .review-text {
+	text-align: left;
+	color: var(--Gray);
+}
+
+/* Footer */
+
+footer {
+	background: var(--Primary);
+	color: #fff;
+	text-align: center;
+}
+
+/* .footer-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.footer-links ul {
+	list-style: none;
+	padding: 0;
+}
+
+.footer-links ul li {
+	margin: 8px 0;
+}
+
+.footer-links ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-socials img {
+	width: 30px;
+	margin: 10px;
+} */
+
+.footer-bottom {
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+@media (max-width: 768px) {
+	/* General Body Adjustments */
+	body {
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	/* Reduce padding for main body*/
+	.padding-5 {
+		padding: 1.5rem 3rem;
+	}
+
+	/* Header Adjustments */
+	header {
+		flex-direction: column;
+		padding: 1rem 2rem; /* Reduce padding */
+		align-items: center;
+		text-align: center;
+	}
+
+	header nav a {
+		margin: 0.5rem 0; /* Space between nav links */
+		padding: 8px 12px;
+		font-size: 14px;
+	}
+
+	/* Hero Section Adjustments */
+	.hero {
+		flex-direction: column-reverse;
+		align-items: center;
+		text-align: center;
+	}
+
+	.hero-text,
+	.hero .hero-img {
+		width: 100%;
+		margin: 0;
+	}
+
+	.hero h3 {
+		font-size: 2rem; /* Smaller heading size */
+		margin-top: 1.2rem; /* To space the header from the image */
+	}
+
+	.hero p.sub {
+		font-size: 1.5rem;
+	}
+
+	.hero-img img {
+		width: 100%;
+		max-width: 350px;
+		height: auto;
+	}
+
+	/* Categories Section Adjustments */
+	.categories {
+		padding: 1rem;
+	}
+
+	.categories h2 {
+		font-size: 1.8rem;
+	}
+
+	.categories-main {
+		grid-template-columns: 1fr; /* Display categories in a single column */
+		gap: 1rem;
+		place-content: center;
+	}
+
+	.categories-box {
+		padding: 10px; /* Reduce box padding */
+	}
+
+	.categories-box .box-top {
+		font-size: 2rem; /* Smaller heading size */
+	}
+
+	.categories-box .box-top svg {
+		width: 40px;
+		height: 40px;
+	}
+
+	/* Responsive Buttons (if any) */
+	button {
+		width: 100%;
+		padding: 12px;
+		font-size: 16px;
+	}
+}
 
 @media (max-width: 480px) {
-    header {
-        padding: 0.8rem 1rem;
-    }
+	header {
+		padding: 0.8rem 1rem;
+	}
 
-    header nav a {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
+	.padding-5 {
+		padding: 1rem 2rem;
+	}
 
-    .hero h3 {
-        font-size: 1.5rem;
-    }
+	header nav a {
+		font-size: 12px;
+		padding: 6px 10px;
+	}
 
-    .hero p.sub {
-        font-size: 1.2rem;
-    }
+	.hero h3 {
+		font-size: 1.5rem;
+	}
+
+	.hero p.sub {
+		font-size: 1.2rem;
+	}
 }
 /* Align all paragraph and heading text to the left */
-.hero, .categories, p, h1, h2, h3, h4, h5, h6 {
-    text-align: left;
-    margin-left:10px; 
-    padding-left: 10px;
+/* .hero,
+.categories,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: left;
+	margin-left: 10px;
+	padding-left: 10px;
 }
 
-/* Optional: Adjust the container */
+/* Optional: Adjust the container 
 .container {
-    display: flex;
-    justify-content: flex-end; 
-    align-items: flex-start;   
-    padding: 20px;
-}
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 20px;
+} */
