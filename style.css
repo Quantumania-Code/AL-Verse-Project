@@ -14,8 +14,8 @@ a {
 }
 /*  Variables For Colors*/
 :root {
-	--Primary: #0a3570;
-	--Secondary: #113bad;
+	--Primary: #0000B8;
+	--Secondary:#00FFFF;
 	--Tertiary: #0011ff;
 	--Green: #2caf04;
 	--White: #fcfcfc;
@@ -25,7 +25,7 @@ a {
 }
 
 body {
-	font-family: 'IBM Plex Mono', system-ui, -apple-system, BlinkMacSystemFont,
+	font-family: 'Arial', system-ui, -apple-system, BlinkMacSystemFont,
 		'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
 		sans-serif;
 	background-color: var(--Secondary);
@@ -153,7 +153,7 @@ header nav a:active {
 
 .categories-box:nth-child(2) .box-top {
 	color: var(--Engineer);
-	border-bottom: 1px solid var(--Engineer);
+	border-bottom: 2px solid var(--Engineer);
 }
 
 .categories-box:last-child {
@@ -163,5 +163,122 @@ header nav a:active {
 
 .categories-box:last-child .box-top {
 	color: var(--Math);
-	border-bottom: 1px solid var(--Math);
+	border-bottom: 2px solid var(--Math);
+}
+
+@media (max-width: 768px) {
+    /* General Body Adjustments */
+    body {
+        font-size: 14px; 
+        padding: 10px;
+    }
+
+    /* Header Adjustments */
+    header {
+        flex-direction: column; 
+        padding: 1rem 2rem; /* Reduce padding */
+        align-items:center;
+        text-align: center
+    }
+
+    header nav a {
+        margin: 0.5rem 0; /* Space between nav links */
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Hero Section Adjustments */
+    .hero {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text, 
+    .hero .hero-img {
+        width: 100%; 
+        margin: 0;
+    }
+
+    .hero h3 {
+        font-size: 2rem; /* Smaller heading size */
+    }
+
+    .hero p.sub {
+        font-size: 1.5rem;
+    }
+
+    .hero-img img {
+        width: 100%; 
+        max-width: 350px; 
+        height: auto;
+    }
+
+    /* Categories Section Adjustments */
+    .categories {
+        padding: 1rem;
+    }
+
+    .categories h2 {
+        font-size: 1.8rem;
+    }
+
+    .categories-main {
+        grid-template-columns: 1fr; /* Display categories in a single column */
+        gap: 1rem;
+    }
+
+    .categories-box {
+        padding: 10px; /* Reduce box padding */
+    }
+
+    .categories-box .box-top {
+        font-size: 2rem; /* Smaller heading size */
+    }
+
+    .categories-box .box-top svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Responsive Buttons (if any) */
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.8rem 1rem;
+    }
+
+    header nav a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .hero h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero p.sub {
+        font-size: 1.2rem;
+    }
+}
+/* Align all paragraph and heading text to the left */
+.hero, .categories, p, h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    margin-left:10px; 
+    padding-left: 10px;
+}
+
+/* Optional: Adjust the container */
+.container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start;   
+    padding: 20px;
 }
