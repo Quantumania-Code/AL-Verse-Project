@@ -1,0 +1,202 @@
+/* The hero part */
+.math-hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.math-text {
+	max-width: 50%;
+}
+
+.math-text h1 {
+	font-size: 2.5rem;
+}
+
+.math-text p {
+	font-size: 1.2rem;
+	color: #555;
+	margin: 10px 0;
+}
+
+/* Button styling */
+
+.btn {
+	display: inline-block;
+	background: transparent;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border: 2px solid var(--Math);
+	border-radius: 5px;
+	font-size: 1.2rem;
+	margin-top: 10px;
+	transition: 0.3s;
+}
+.btn:hover,
+.btn:active {
+	background: var(--Math);
+}
+
+.math-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Courses */
+.courses {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.courses h2 {
+	font-size: 2.5rem;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.course-box {
+	border-radius: 8px;
+	padding: 1rem 1.5rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+}
+
+.course-box h3 {
+	color: #6a0dad;
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.course-box .course-goal {
+	font-size: 1.2rem;
+}
+.course-box .title {
+	font-size: 1.1rem;
+	font-style: oblique;
+	line-height: 15px;
+}
+
+/* For the videos part */
+.videos {
+	margin-top: 2rem;
+	padding: 5px 10px;
+}
+.videos h4 {
+	font-size: 1.5rem;
+}
+
+.videos-main {
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+}
+
+.video-box {
+	padding: 10px 15px;
+	background-color: transparent;
+	border: 2px solid var(--Tertiary);
+	border-radius: 15px;
+}
+
+.video-box .video {
+	padding: 15px;
+	position: relative;
+	width: 100%;
+	height: 250px;
+	border: 2px solid var(--Tertiary);
+	border-radius: 11px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.video-box .video img,
+.video-box .video iframe {
+	width: 100%;
+	object-fit: cover;
+}
+
+/* Hidden iframe */
+iframe {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Styling for the thumbnail */
+.video-thumbnail {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.video-box .video-text {
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+
+.video-box .video-text .title {
+	margin: 10px 0;
+	padding: 10px 0;
+	border-bottom: 1px solid var(--White);
+}
+
+/* Styling the more button */
+.more-box {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff86;
+	transition: 0.3s;
+	border-radius: 15px;
+}
+
+.more-box:hover,
+.more-box:active {
+	background-color: #ffffffb9;
+	transform: translateY(-5px);
+}
+
+.more-box p {
+	font-size: 1.5rem;
+	margin-bottom: 1.2rem;
+}
+
+.more-box span {
+	font-size: 5rem;
+}
+
+@media (max-width: 412px) {
+	.content {
+		padding: 20px;
+		text-align: center;
+	}
+	.math-box {
+		background-color: white;
+		color: black;
+		padding: 20px;
+		margin: 20px auto;
+		border-radius: 10px;
+		max-width: 600px;
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	}
+	footer {
+		background-color: #0011ff;
+		color: white;
+		text-align: center;
+		padding: 15px 0;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 50;
+	}
+}

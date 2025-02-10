@@ -1,35 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Zone</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS if needed -->
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Math Zone</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="math.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_double_arrow_right"
+		/>
+		<!-- Google font icons -->
+		<script src="math.js"></script>
+		<!-- Link to your CSS if needed -->
+	</head>
+	<body>
+		<header>
+			<h1>Math Zone</h1>
+			<nav>
+				<a href="../index.html">Home</a>
+				<a href="#">Algebra</a>
+				<a href="#">Geometry</a>
+				<a href="#">Calculus</a>
+			</nav>
+		</header>
 
-    <header>
-        <h1>Math Zone</h1>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="#">Algebra</a>
-            <a href="#">Geometry</a>
-            <a href="#">Calculus</a>
-        </nav>
-    </header>
+		<main class="padding-5">
+			<div class="math-hero">
+				<div class="math-text">
+					<h1>Master the Language of Numbers</h1>
+					<p>
+						Mathematics is the foundation of logic, problem-solving, and
+						scientific discovery. Explore interactive lessons, practice
+						problems, and expert explanations to strengthen your understanding.
+					</p>
+					<a href="#courses" class="btn">Start Learning</a>
+				</div>
+				<div class="math-image">
+					<img
+						src="img/math-hero.png"
+						alt="Mathematics concepts illustration"
+					/>
+				</div>
+			</div>
 
-    <div class="content">
-        <h2>Welcome to the World of Mathematics!</h2>
-        <div class="math-box">
-            <h3> Topic: Algebra</h3>
-            <p>Algebra is the study of mathematical symbols and rules for manipulating these symbols.</p>
-            <p>For example, solve this: <strong>2x + 3 = 9</strong>. What's the value of <strong>x</strong>?</p>
-        </div>
-    </div>
+			<div class="courses padding-5">
+				<h2>Our Courses</h2>
 
-    <footer>
-        © 2025 Math Zone | All Rights Reserved
-    </footer>
+				<!-- Algebra -->
+				<div class="course-box">
+					<h3>Algebra</h3>
+					<p class="course-goal">
+						Understand equations, expressions, functions, and more.
+					</p>
+					<p class="title">
+						Algebra is the study of mathematical symbols and rules for
+						manipulating these symbols.
+					</p>
+					<div class="videos">
+						<h4>Lessons</h4>
+						<div class="videos-main">
+							<!-- First Video -->
+							<div class="video-box">
+								<div class="video" onclick="playVideo()">
+									<!-- Custom thumbnail image -->
+									<img
+										src="https://img.youtube.com/vi/MHeirBPOI6w/maxresdefault.jpg"
+										alt="Video Thumbnail"
+										class="video-thumbnail"
+									/>
 
-</body>
+									<!-- Hidden iframe for playing YouTube video -->
+									<iframe
+										id="youtube-video"
+										width="560"
+										height="315"
+										src="https://www.youtube.com/embed/MHeirBPOI6w?si=6FcpDE1XX8nnaLuH"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+										allowfullscreen
+									></iframe>
+								</div>
+								<div class="video-text">
+									<p class="title">Algebra for beginners</p>
+									<p class="description">
+										Struggling with algebra? This video introduces you to the
+										concepts of algebra in a simple and easy-to-understand way!
+										Learn how to solve equations, simplify expressions, and
+										tackle word problems with confidence.
+									</p>
+								</div>
+							</div>
+							<!-- Second Video -->
+							<div class="video-box">
+								<div class="video" onclick="playVideo()">
+									<!-- Custom thumbnail image -->
+									<img
+										src="https://img.youtube.com/vi/hNk2xr4MUS8/maxresdefault.jpg"
+										alt="Video Thumbnail"
+										class="video-thumbnail"
+									/>
+
+									<!-- Hidden iframe for playing YouTube video -->
+									<iframe
+										id="youtube-video"
+										width="560"
+										height="315"
+										src="https://www.youtube.com/embed/hNk2xr4MUS8?si=I0hKpGk-kFcjALfj"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+										allowfullscreen
+									></iframe>
+								</div>
+								<div class="video-text">
+									<p class="title">Rational and Irrational numbers</p>
+									<p class="description">
+										Confused about rational and irrational numbers? This video
+										simplifies these concepts, making them easy to understand!
+										Learn how to identify, compare, and work with both types of
+										numbers confidently.
+									</p>
+								</div>
+							</div>
+
+							<!-- LINK FOR THE COURSES PAGE -->
+							<a href="#" class="more-box">
+								<p>View Full Course</p>
+								<span class="material-symbols-outlined">
+									keyboard_double_arrow_right
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Geometry -->
+				<div class="course-box">
+					<h3>Geometry</h3>
+					<p class="course-goal">
+						Explore shapes, angles, transformations, and spatial reasoning
+					</p>
+					<p class="title">
+						Geometry is the branch of mathematics concerned with the properties
+						and relations of points, lines, surfaces, solids, and higher
+						dimensional analogues
+					</p>
+					<div class="videos">
+						<h4>Lessons</h4>
+						<div class="videos-main">
+							<!-- First Video -->
+							<div class="video-box">
+								<div class="video" onclick="playVideo()">
+									<!-- Custom thumbnail image -->
+									<img
+										src="https://img.youtube.com/vi/KtZai86htng/maxresdefault.jpg"
+										alt="Video Thumbnail"
+										class="video-thumbnail"
+									/>
+
+									<!-- Hidden iframe for playing YouTube video -->
+									<iframe
+										id="youtube-video"
+										width="560"
+										height="315"
+										src="https://www.youtube.com/embed/KtZai86htng?si=IZFE2wXOSZE94nkX"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+										allowfullscreen
+									></iframe>
+								</div>
+								<div class="video-text">
+									<p class="title">Geometry for beginners</p>
+									<p class="description">
+										Struggling with Geometry? This video introduces you to the
+										concepts of algebra in a simple and easy-to-understand way!
+										Learn how to solve equations, simplify expressions, and
+										tackle problems with confidence.
+									</p>
+								</div>
+							</div>
+							<!-- Second Video -->
+							<div class="video-box">
+								<div class="video" onclick="playVideo()">
+									<!-- Custom thumbnail image -->
+									<img
+										src="https://img.youtube.com/vi/e4o7X6LyX-I/maxresdefault.jpg"
+										alt="Video Thumbnail"
+										class="video-thumbnail"
+									/>
+
+									<!-- Hidden iframe for playing YouTube video -->
+									<iframe
+										id="youtube-video"
+										width="560"
+										height="315"
+										src="https://www.youtube.com/embed/e4o7X6LyX-I?si=KBUGJM0SaVw_EseC"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+										allowfullscreen
+									></iframe>
+								</div>
+								<div class="video-text">
+									<p class="title">Rational and Irrational numbers</p>
+									<p class="description">
+										Confused about rational and irrational numbers? This video
+										simplifies these concepts, making them easy to understand!
+										Learn how to identify, compare, and work with both types of
+										numbers confidently.
+									</p>
+								</div>
+							</div>
+
+							<!-- LINK FOR THE COURSES PAGE -->
+							<a href="#" class="more-box">
+								<p>View Full Course</p>
+								<span class="material-symbols-outlined">
+									keyboard_double_arrow_right
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Trigonometry -->
+				<div class="course-box">
+					<h3>Trigonometry</h3>
+					<p class="course-goal">
+						Dive into sine, cosine, tangents, and their real-world applications.
+					</p>
+					<p class="title">
+						Trigonometry is the branch of mathematics concerned with specific
+						functions of angles and their application to calculations.
+					</p>
+					<div class="videos">
+						<h4>Lessons</h4>
+						<div class="videos-main">
+							<!-- First Video -->
+							<div class="video-box">
+								<div class="video" onclick="playVideo()">
+									<!-- Custom thumbnail image -->
+									<img
+										src="https://img.youtube.com/vi/g8VCHoSk5_o/maxresdefault.jpg"
+										alt="Video Thumbnail"
+										class="video-thumbnail"
+									/>
+
+									<!-- Hidden iframe for playing YouTube video -->
+									<iframe
+										id="youtube-video"
+										width="560"
+										height="315"
+										src="https://www.youtube.com/embed/g8VCHoSk5_o?si=RoJjrANWSKkJIb48"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+										allowfullscreen
+									></iframe>
+								</div>
+								<div class="video-text">
+									<p class="title">Trigonometry for beginners</p>
+									<p class="description">
+										Struggling with trigonometry? This video introduces you to
+										the concepts of algebra in a simple and easy-to-understand
+										way! Learn how to solve equations, simplify expressions, and
+										tackle problems with confidence.
+									</p>
+								</div>
+							</div>
+							<!-- Second Video -->
+							<div class="video-box">
+								<div class="video" onclick="playVideo()">
+									<!-- Custom thumbnail image -->
+									<img
+										src="https://img.youtube.com/vi/JmLN3QxshlE/maxresdefault.jpg"
+										alt="Video Thumbnail"
+										class="video-thumbnail"
+									/>
+
+									<!-- Hidden iframe for playing YouTube video -->
+									<iframe
+										id="youtube-video"
+										width="560"
+										height="315"
+										src="https://www.youtube.com/embed/JmLN3QxshlE?si=qSzjIEgzcGUWvn2J"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+										allowfullscreen
+									></iframe>
+								</div>
+								<div class="video-text">
+									<p class="title">Rational and Irrational numbers</p>
+									<p class="description">
+										Confused about rational and irrational numbers? This video
+										simplifies these concepts, making them easy to understand!
+										Learn how to identify, compare, and work with both types of
+										numbers confidently.
+									</p>
+								</div>
+							</div>
+
+							<!-- LINK FOR THE COURSES PAGE -->
+							<a href="#" class="more-box">
+								<p>View Full Course</p>
+								<span class="material-symbols-outlined">
+									keyboard_double_arrow_right
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Calculus -->
+				<div class="course-box">
+					<h3>Calculus</h3>
+					<p class="course-goal">
+						Master derivatives, integrals, and limits to solve real-world
+						problems.
+					</p>
+					<p class="title">
+						Calculus is a branch of mathematics that deals with rates of change.
+						It is the mathematical study of continuous change.
+					</p>
+					<div class="videos">
+						<h4>Lessons</h4>
+						<div class="videos-main">
+							<!-- First Video -->
+							<div class="video-box">
+								<div class="video" onclick="playVideo()">
+									<!-- Custom thumbnail image -->
+									<img
+										src="https://img.youtube.com/vi/GiCojsAWRj0/maxresdefault.jpg"
+										alt="Video Thumbnail"
+										class="video-thumbnail"
+									/>
+
+									<!-- Hidden iframe for playing YouTube video -->
+									<iframe
+										id="youtube-video"
+										width="560"
+										height="315"
+										src="https://www.youtube.com/embed/GiCojsAWRj0?si=V66kyF-MHnRo7uzH"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+										allowfullscreen
+									></iframe>
+								</div>
+								<div class="video-text">
+									<p class="title">Calculus for beginners</p>
+									<p class="description">
+										Struggling with Calculus? This video introduces you to the
+										concepts of algebra in a simple and easy-to-understand way!
+										Learn how to solve equations, simplify expressions, and
+										tackle problems with confidence.
+									</p>
+								</div>
+							</div>
+							<!-- Second Video -->
+							<div class="video-box">
+								<div class="video" onclick="playVideo()">
+									<!-- Custom thumbnail image -->
+									<img
+										src="https://img.youtube.com/vi/KirGQOwjBVI/maxresdefault.jpg"
+										alt="Video Thumbnail"
+										class="video-thumbnail"
+									/>
+
+									<!-- Hidden iframe for playing YouTube video -->
+									<iframe
+										id="youtube-video"
+										width="560"
+										height="315"
+										src="https://www.youtube.com/embed/KirGQOwjBVI?si=5Ngvjf8xvjT14_rF"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										referrerpolicy="strict-origin-when-cross-origin"
+										allowfullscreen
+									></iframe>
+								</div>
+								<div class="video-text">
+									<p class="title">Rational and Irrational numbers</p>
+									<p class="description">
+										Confused about rational and irrational numbers? This video
+										simplifies these concepts, making them easy to understand!
+										Learn how to identify, compare, and work with both types of
+										numbers confidently.
+									</p>
+								</div>
+							</div>
+
+							<!-- LINK FOR THE COURSES PAGE -->
+							<a href="#" class="more-box">
+								<p>View Full Course</p>
+								<span class="material-symbols-outlined">
+									keyboard_double_arrow_right
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="padding-5">
+			<div class="footer-bottom">
+				<p>&copy; 2025 AL-Verse | All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
 </html>
