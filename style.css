@@ -241,7 +241,7 @@ footer {
 	margin-bottom: 0;
 }
 
-/* .footer-container {
+/*.footer-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -264,7 +264,7 @@ footer {
 .footer-socials img {
 	width: 30px;
 	margin: 10px;
-} */
+} 
 
 .footer-bottom {
 	margin-top: 10px;
@@ -353,39 +353,3 @@ footer {
 		height: 40px;
 	}
 
-	/* Responsive Buttons (if any) */
-	button {
-		width: 100%;
-		padding: 12px;
-		font-size: 16px;
-	}
-
-	.reviews-main {
-		padding: 5px;
-		grid-template-columns: 1fr;
-		margin-bottom: 1rem;
-	}
-}
-
-@media (max-width: 480px) {
-	header {
-		padding: 0.8rem 1rem;
-	}
-
-	.padding-5 {
-		padding: 1rem 2rem;
-	}
-
-	header nav a {
-		font-size: 12px;
-		padding: 6px 10px;
-	}
-
-	.hero h3 {
-		font-size: 1.5rem;
-	}
-
-	.hero p.sub {
-		font-size: 1.2rem;
-	}
-}

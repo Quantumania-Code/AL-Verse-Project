@@ -200,3 +200,75 @@ iframe {
 		height: 50;
 	}
 }
+
+
+
+@media (max-width: 768px) {
+	.math-hero {
+		flex-direction:columns;
+		text-align: center;
+		padding: 20px;
+	}
+	.math-text {
+		max-width: 100%;
+	}
+	.math-text h1 {
+		font-size: 2rem;
+	}
+	.math-text p {
+		font-size: 1rem;
+	}
+	.btn {
+		font-size: 1rem;
+		padding: 8px 16px;
+	}
+	.math-image {
+		margin-top: 20px;
+	}
+	.math-image img {
+		max-width: 80%;
+	}
+
+	
+	.courses {
+		padding: 10px;
+	}
+	.courses h2 {
+		font-size: 2rem;
+	}
+	.course-box {
+		padding: 15px;
+	}
+	.course-box h3 {
+		font-size: 1.5rem;
+	}
+	.course-box .course-goal,
+	.course-box .title {
+		font-size: 1rem;
+	}
+
+	.videos {
+		padding: 10px;
+	}
+	.videos-main {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 1rem;
+	}
+	.video-box .video {
+		height: 150px;
+	}
+
+	.more-box p {
+		font-size: 1.2rem;
+	}
+	.more-box span {
+		font-size: 3.5rem;
+	}
+
+	
+	footer {
+		position: relative;
+		padding: 10px 0;
+		height: auto;
+	}
+}
