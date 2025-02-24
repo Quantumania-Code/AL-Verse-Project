@@ -11,7 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_double_arrow_right"
 		/>
 		<!-- Google font icons -->
-		<script src="math.js"></script>
+		<script defer src="math.js"></script>
 		<!-- Link to your CSS if needed -->
 	</head>
 	<body>
@@ -44,7 +44,7 @@
 				</div>
 			</div>
 
-			<div class="courses padding-5">
+			<div class="courses padding-5" id="courses">
 				<h2>Our Courses</h2>
 
 				<!-- Algebra -->
@@ -62,7 +62,7 @@
 						<div class="videos-main">
 							<!-- First Video -->
 							<div class="video-box">
-								<div class="video" onclick="playVideo()">
+								<div class="video">
 									<!-- Custom thumbnail image -->
 									<img
 										src="https://img.youtube.com/vi/MHeirBPOI6w/maxresdefault.jpg"
@@ -72,7 +72,7 @@
 
 									<!-- Hidden iframe for playing YouTube video -->
 									<iframe
-										id="youtube-video"
+										class="youtube-video"
 										width="560"
 										height="315"
 										src="https://www.youtube.com/embed/MHeirBPOI6w?si=6FcpDE1XX8nnaLuH"
@@ -95,7 +95,7 @@
 							</div>
 							<!-- Second Video -->
 							<div class="video-box">
-								<div class="video" onclick="playVideo()">
+								<div class="video">
 									<!-- Custom thumbnail image -->
 									<img
 										src="https://img.youtube.com/vi/hNk2xr4MUS8/maxresdefault.jpg"
@@ -105,7 +105,7 @@
 
 									<!-- Hidden iframe for playing YouTube video -->
 									<iframe
-										id="youtube-video"
+										class="youtube-video"
 										width="560"
 										height="315"
 										src="https://www.youtube.com/embed/hNk2xr4MUS8?si=I0hKpGk-kFcjALfj"
@@ -128,7 +128,7 @@
 							</div>
 
 							<!-- LINK FOR THE COURSES PAGE -->
-							<a href="#" class="more-box">
+							<a href="algebra.html" class="more-box">
 								<p>View Full Course</p>
 								<span class="material-symbols-outlined">
 									keyboard_double_arrow_right
@@ -154,7 +154,7 @@
 						<div class="videos-main">
 							<!-- First Video -->
 							<div class="video-box">
-								<div class="video" onclick="playVideo()">
+								<div class="video">
 									<!-- Custom thumbnail image -->
 									<img
 										src="https://img.youtube.com/vi/KtZai86htng/maxresdefault.jpg"
@@ -164,7 +164,7 @@
 
 									<!-- Hidden iframe for playing YouTube video -->
 									<iframe
-										id="youtube-video"
+										class="youtube-video"
 										width="560"
 										height="315"
 										src="https://www.youtube.com/embed/KtZai86htng?si=IZFE2wXOSZE94nkX"
@@ -187,7 +187,7 @@
 							</div>
 							<!-- Second Video -->
 							<div class="video-box">
-								<div class="video" onclick="playVideo()">
+								<div class="video">
 									<!-- Custom thumbnail image -->
 									<img
 										src="https://img.youtube.com/vi/e4o7X6LyX-I/maxresdefault.jpg"
@@ -197,7 +197,7 @@
 
 									<!-- Hidden iframe for playing YouTube video -->
 									<iframe
-										id="youtube-video"
+										class="youtube-video"
 										width="560"
 										height="315"
 										src="https://www.youtube.com/embed/e4o7X6LyX-I?si=KBUGJM0SaVw_EseC"
@@ -245,7 +245,7 @@
 						<div class="videos-main">
 							<!-- First Video -->
 							<div class="video-box">
-								<div class="video" onclick="playVideo()">
+								<div class="video">
 									<!-- Custom thumbnail image -->
 									<img
 										src="https://img.youtube.com/vi/g8VCHoSk5_o/maxresdefault.jpg"
@@ -255,7 +255,7 @@
 
 									<!-- Hidden iframe for playing YouTube video -->
 									<iframe
-										id="youtube-video"
+										class="youtube-video"
 										width="560"
 										height="315"
 										src="https://www.youtube.com/embed/g8VCHoSk5_o?si=RoJjrANWSKkJIb48"
@@ -278,7 +278,7 @@
 							</div>
 							<!-- Second Video -->
 							<div class="video-box">
-								<div class="video" onclick="playVideo()">
+								<div class="video">
 									<!-- Custom thumbnail image -->
 									<img
 										src="https://img.youtube.com/vi/JmLN3QxshlE/maxresdefault.jpg"
@@ -288,7 +288,7 @@
 
 									<!-- Hidden iframe for playing YouTube video -->
 									<iframe
-										id="youtube-video"
+										class="youtube-video"
 										width="560"
 										height="315"
 										src="https://www.youtube.com/embed/JmLN3QxshlE?si=qSzjIEgzcGUWvn2J"
@@ -337,7 +337,7 @@
 						<div class="videos-main">
 							<!-- First Video -->
 							<div class="video-box">
-								<div class="video" onclick="playVideo()">
+								<div class="video">
 									<!-- Custom thumbnail image -->
 									<img
 										src="https://img.youtube.com/vi/GiCojsAWRj0/maxresdefault.jpg"
@@ -347,7 +347,7 @@
 
 									<!-- Hidden iframe for playing YouTube video -->
 									<iframe
-										id="youtube-video"
+										class="youtube-video"
 										width="560"
 										height="315"
 										src="https://www.youtube.com/embed/GiCojsAWRj0?si=V66kyF-MHnRo7uzH"
@@ -370,7 +370,7 @@
 							</div>
 							<!-- Second Video -->
 							<div class="video-box">
-								<div class="video" onclick="playVideo()">
+								<div class="video">
 									<!-- Custom thumbnail image -->
 									<img
 										src="https://img.youtube.com/vi/KirGQOwjBVI/maxresdefault.jpg"
@@ -380,7 +380,7 @@
 
 									<!-- Hidden iframe for playing YouTube video -->
 									<iframe
-										id="youtube-video"
+										class="youtube-video"
 										width="560"
 										height="315"
 										src="https://www.youtube.com/embed/KirGQOwjBVI?si=5Ngvjf8xvjT14_rF"

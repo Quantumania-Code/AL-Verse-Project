@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 a {
 	text-decoration: none;
 	color: white;
@@ -269,7 +273,7 @@ footer {
 .footer-bottom {
 	margin-top: 10px;
 	font-size: 14px;
-}
+} */
 
 @media (max-width: 768px) {
 	/* General Body Adjustments */
@@ -280,7 +284,7 @@ footer {
 
 	/* Reduce padding for main body*/
 	.padding-5 {
-		padding: 1.5rem 3rem;
+		padding: 1.5rem 1rem;
 	}
 
 	/* Header Adjustments */
@@ -352,4 +356,4 @@ footer {
 		width: 40px;
 		height: 40px;
 	}
-
+}

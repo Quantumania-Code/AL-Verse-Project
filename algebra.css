@@ -1,0 +1,180 @@
+h3 {
+	text-align: center;
+	font-size: 2.5rem;
+}
+main h2 {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 3rem;
+}
+
+.algebra {
+	margin: 1rem auto;
+}
+
+/* For the beginners section */
+.beginners {
+	text-align: center;
+	margin-bottom: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* The inner container */
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	padding: 0rem 10rem;
+	margin-top: 20px;
+}
+
+/* The individual card */
+.card {
+	background: linear-gradient(135deg, #6e45e2, #88d3ce);
+	color: white;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	/* width: 250px; */
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.card h4 {
+	margin-bottom: 10px;
+	font-size: 1.5em;
+	transform: translateY(10px);
+	transition: transform 0.3s ease;
+}
+.card p {
+	font-size: 1em;
+	transform: translateY(10px);
+	transition: transform 0.3s ease;
+}
+
+/* Card animations */
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.card:hover h4,
+.card:hover p {
+	transform: translateY(0);
+}
+.start-btn {
+	display: inline-block;
+	margin-top: 15px;
+	padding: 10px 20px;
+	background: white;
+	color: #6e45e2;
+	border-radius: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background 0.3s ease, color 0.3s ease;
+}
+.start-btn:hover {
+	background: #6e45e2;
+	color: white;
+}
+.more-btn {
+	display: flex;
+	text-align: center;
+	align-self: center;
+	display: inline-block;
+	margin-top: 30px;
+	padding: 12px 25px;
+	background: #6e45e2;
+	color: white;
+	font-size: 1.2em;
+	border-radius: 15px;
+	text-decoration: none;
+	transition: background 0.3s ease, transform 0.3s ease;
+}
+.more-btn:hover {
+	background: var(--Tertiary);
+	transform: scale(1.1);
+}
+
+.card-img {
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+/* The remaining sections */
+.college-algebra {
+	margin-bottom: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.advanced-algebra {
+	margin-bottom: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Modal styles */
+/* Modal Overlay */
+.course-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+/* Modal Content Box */
+/* .modal-content {
+	background: white;
+	width: 80%;
+	max-width: 800px;
+	padding: 20px;
+	border-radius: 8px;
+	position: relative;
+}
+
+/* Close Button 
+.close-btn {
+	color: black;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+/* PDF Frame 
+.pdf-frame {
+	width: 100%;
+	height: 500px;
+	border: none;
+}
+
+/* Video Container 
+.video-container {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* Video Frame 
+.video-frame {
+	width: 100%;
+	height: 300px;
+	border: none;
+}
+
+embed {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+} */
